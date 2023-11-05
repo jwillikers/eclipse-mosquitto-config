@@ -1,0 +1,50 @@
+= Eclipse Mosquitto Config
+Jordan Williams <jordan@jwillikers.com>
+:experimental:
+:keywords: eclipse home-assistant mosquitto mqtt podman
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:Eclipse-Mosquitto: https://mosquitto.org/[Eclipse Mosquitto]
+:MQTT: https://mqtt.org/[MQTT]
+
+This is my configuration for the {Eclipse-Mosquitto} {MQTT} server.
+
+== Usage
+
+The configuration is meant to be used with the containers from the https://github.com/jwillikers/home-lab-helm[Home Lab Helm] repository.
+
+. Create a `Projects` directory in the current user's home directory.
++
+[,sh]
+----
+mkdir -p ~/Projects
+----
+
+. Clone this repository under `~/Projects`.
++
+[,sh]
+----
+git -C ~/Projects clone git@github.com:jwillikers/eclipse-mosquitto-config.git
+----
+
+. Mount the `mosquitto.conf` file in the Eclipse Mosquitto container at `/mosquitto/config/mosquitto.conf`.
+
+== Code of Conduct
+
+Please refer to the project's link:CODE_OF_CONDUCT.adoc[Code of Conduct].
+
+== License
+
+This project is licensed under the https://creativecommons.org/licenses/by-sa/4.0/legalcode[Creative Commons Attribution-ShareAlike 4.0 International License].
+
+© 2023 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]
