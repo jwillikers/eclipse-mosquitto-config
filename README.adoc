@@ -17,20 +17,20 @@ This is my configuration for the {Eclipse-Mosquitto} {MQTT} server.
 
 == Usage
 
-The configuration is meant to be used with the containers from the https://github.com/jwillikers/home-lab-helm[Home Lab Helm] repository.
+The configuration is meant to be used with the containers from the https://codeberg.org/jwillikers/home-lab-helm[Home Lab Helm] repository.
 
 . Create a `Projects` directory in the current user's home directory.
 +
 [,sh]
 ----
-mkdir -p ~/Projects
+mkdir --parents ~/Projects
 ----
 
 . Clone this repository under `~/Projects`.
 +
 [,sh]
 ----
-git -C ~/Projects clone git@github.com:jwillikers/eclipse-mosquitto-config.git
+git -C ~/Projects clone git@codeberg.org:jwillikers/eclipse-mosquitto-config.git
 ----
 
 . Mount the `mosquitto.conf` file in the Eclipse Mosquitto container at `/mosquitto/config/mosquitto.conf`.
@@ -43,7 +43,7 @@ Please refer to the project's link:CODE_OF_CONDUCT.adoc[Code of Conduct].
 
 This project is licensed under the https://creativecommons.org/licenses/by-sa/4.0/legalcode[Creative Commons Attribution-ShareAlike 4.0 International License].
 
-© 2023 Jordan Williams
+© 2023-2024 Jordan Williams
 
 == Authors
 
